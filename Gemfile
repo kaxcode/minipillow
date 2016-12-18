@@ -57,3 +57,7 @@ end
 group :production do
   gem 'rails_12factor'
 end
+
+# Omniauth
+gem 'omniauth'
+gem 'omniauth-github'
