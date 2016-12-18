@@ -1,0 +1,26 @@
+.page-header
+  = link_to houses_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_house_path(@house), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show house
+
+%dl.dl-horizontal
+  %dt Address:
+  %dd= @house.address
+  %dt Number of beds:
+  %dd= @house.number_of_beds
+  %dt Number of baths:
+  %dd= @house.number_of_baths
+  %dt Year built:
+  %dd= @house.year_built
+  %dt Sq footage:
+  %dd= @house.sq_footage
+  %dt Price:
+  %dd= @house.price
+  %dt Description:
+  %dd= @house.description
+  %dt User:
+  %dd= @house.user
