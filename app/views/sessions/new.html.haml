@@ -1,1 +1,7 @@
-= link_to 'Login with Github', auth_path(provider: 'github')    
+.container
+  .row
+    .col-md-6.col-md-offset-3
+      .btn.btn-block.btn-social.btn-github
+        = link_to auth_path(provider: 'github') do
+          %span.fa.fa-github
+          %span.p.github Login with Github
