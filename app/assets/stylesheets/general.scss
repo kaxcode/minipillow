@@ -35,24 +35,20 @@
   }
 }
 
-// house/listing container styling
-.container-listings {
-  margin-top: 60px;
-}
-
 //house image
 .house_image {
   position: relative;
   width: 100%; /* for IE 6 */
+  margin-top: 25px;
 }
 
 .image_address {
   position: absolute;
   top: 200px;
-  left: 20px;
+  left: 25px;
   width: 100%;
   color: #000;
-  color: #f1f1f1;
+  color: #f2f2f2;
   margin: 0px;
   background: rgba(10, 0, 0, 0.3);
   width: 220px;
@@ -61,9 +57,9 @@
 .image_price {
   position: absolute;
   top: 221px;
-  left: 20px;
+  left: 25px;
   width: 100%;
-  color: #f1f1f1;
+  color: #f2f2f2;
   margin: 0px;
   background: rgba(10, 0, 0, 0.3);
   width: 220px;
@@ -72,9 +68,9 @@
 .image_text {
   position: absolute;
   top: 249px;
-  left: 20px;
+  left: 25px;
   width: 100%;
-  color: #f1f1f1;
+  color: #f2f2f2;
   margin: 0px;
   background: rgba(10, 0, 0, 0.3);
   width: 220px;

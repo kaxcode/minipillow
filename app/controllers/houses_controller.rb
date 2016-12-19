@@ -2,7 +2,7 @@ class HousesController < ApplicationController
   before_action :authenticate!, except: [:index]
   # GET /houses
   def index
-    @houses = House.all
+    @houses = House.all.order("created_at DESC")
   end
 
   # GET /houses/1

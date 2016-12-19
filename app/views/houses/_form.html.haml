@@ -45,11 +45,12 @@
           = f.label :description, class: 'col-md-6 control-label'
           .col-lg-6
             %select#select.form-control
-              %option House
-              %option Apartment
-              %option Condo
-              %option Mansion
-              %option Vacation Home
+              %option{value:"House"} House
+              %option{value:"Apartment"} Apartment
+              %option{value:"Condo"} Condo
+              %option{value:"Mansion"} Mansion
+              %option{value:"Vacation Home"} Vacation Home
+
     .col-sm-5
       .form-group
         = f.label :cover_image, class: 'col-md-3 control-label'

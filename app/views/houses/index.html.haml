@@ -2,17 +2,18 @@
   .row
     - @houses.each do |house|
       .col-sm-6.col-md-6.col-xs-6
-        .img-thumbnail{:style => "border:none; background:white;"}
-          .image-container.img
-          = image_tag attachment_url(house, :cover_image), size: "400x300", class: "house_image"
-          .image_address
-            = house.address
-          %span.h3.image_price
-            = house.price
-          %span.p.image_text
-            = house.number_of_beds
-            Beds
-            = house.number_of_baths
-            Baths
-            = house.sq_footage
-            Sq.Feet
+        = link_to house do
+          .img-thumbnail{:style => "border:none; background:white;"}
+            .image-container.img
+            = image_tag attachment_url(house, :cover_image), size: "400x300", class: "house_image"
+            .image_address
+              = house.address
+            %span.h3.image_price
+              = house.price
+            %span.p.image_text
+              = house.number_of_beds
+              Beds
+              = house.number_of_baths
+              Baths
+              = house.sq_footage
+              Sq.Feet
