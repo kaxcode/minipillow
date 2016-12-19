@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+house = House.create(
+  [
+    {
+      cover_image: File.open(Rails.root.join("db/seeds/four.jpg")), address: "1st Ave", number_of_beds: 3, number_of_baths: 2, year_built: "2012", sq_footage: "1000", price: "1000000", description: "Apartment", user_id: 1
+    }, {
+      cover_image: File.open(Rails.root.join("db/seeds/two.jpg")), address: "2nd Ave", number_of_beds: 8, number_of_baths: 7, year_built: "2012", sq_footage: "1000000", price: "20000000", description: "Mansion", user_id: 2
+    }
+  ]
+)

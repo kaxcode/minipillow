@@ -1,7 +1,7 @@
 = form_for @house, html: { class: "form-horizontal", role: "form" } do |f|
   -if @house.errors.any?
-    .alert.alert-danger.alert-dismissable{role: "alert"}
-      %button.close{type: "button", data: {dismiss: "alert"} }
+    .alert.alert-danger.alert-dimdissable{role: "alert"}
+      %button.close{type: "button", data: {dimdiss: "alert"} }
         %span{aria: {hidden: "true"} } &times;
         %span.sr-only Close
       %h4= "#{pluralize(@house.errors.count, "error")} prohibited this house from being saved:"
@@ -9,39 +9,52 @@
       %ul
         - @house.errors.full_messages.each do |msg|
           %li= msg
-
+  .row
+    .col-sm-7
+      .form-group
+        = f.label :address, class: 'col-md-3 control-label'
+        .col-md-9
+          = f.text_field :address, class: 'form-control'
+      .col-sm-6
+        .form-group
+          = f.label :number_of_beds, class: 'col-md-6 control-label'
+          .col-md-6
+            = f.number_field :number_of_beds, class: 'form-control'
+      .col-sm-6
+        .form-group
+          = f.label :number_of_baths, class: 'col-md-6 control-label'
+          .col-md-6
+            = f.number_field :number_of_baths, class: 'form-control'
+      .col-sm-6
+        .form-group
+          = f.label :year_built, class: 'col-md-6 control-label'
+          .col-md-6
+            = f.number_field :year_built, class: 'form-control'
+      .col-sm-6
+        .form-group
+          = f.label :sq_footage, class: 'col-md-6 control-label'
+          .col-md-6
+            = f.number_field :sq_footage, class: 'form-control'
+      .col-sm-6
+        .form-group
+          = f.label :price, class: 'col-md-6 control-label'
+          .col-md-6
+            = f.number_field :price, class: 'form-control'
+      .col-sm-6
+        .form-group
+          = f.label :description, class: 'col-md-6 control-label'
+          .col-lg-6
+            %select#select.form-control
+              %option House
+              %option Apartment
+              %option Condo
+              %option Mansion
+              %option Vacation Home
+    .col-sm-5
+      .form-group
+        = f.label :cover_image, class: 'col-md-3 control-label'
+        .col-md-9
+          = f.attachment_field :cover_image
   .form-group
-    = f.label :address, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.text_field :address, class: 'form-control'
-  .form-group
-    = f.label :number_of_beds, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :number_of_beds, class: 'form-control'
-  .form-group
-    = f.label :number_of_baths, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :number_of_baths, class: 'form-control'
-  .form-group
-    = f.label :year_built, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :year_built, class: 'form-control'
-  .form-group
-    = f.label :sq_footage, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :sq_footage, class: 'form-control'
-  .form-group
-    = f.label :price, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :price, class: 'form-control'
-  .form-group
-    = f.label :description, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.text_area :description, class: 'form-control'
-  .form-group
-    = f.label :user, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.text_field :user, class: 'form-control'
-  .form-group
-    .col-sm-offset-2.col-sm-10
-      = f.submit class: 'btn btn-primary'
+    .col-md-offset-8.col-md-1
+      = f.submit class: 'btn btn-success'

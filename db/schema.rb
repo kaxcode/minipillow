@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161218161818) do
+ActiveRecord::Schema.define(version: 20161218222241) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,7 +26,16 @@ ActiveRecord::Schema.define(version: 20161218161818) do
     t.integer  "user_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "cover_image_id"
     t.index ["user_id"], name: "index_houses_on_user_id", using: :btree
+  end
+
+  create_table "refile_attachments", force: :cascade do |t|
+    t.integer  "oid",        null: false
+    t.string   "namespace",  null: false
+    t.datetime "created_at"
+    t.index ["namespace"], name: "index_refile_attachments_on_namespace", using: :btree
+    t.index ["oid"], name: "index_refile_attachments_on_oid", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -35,8 +44,9 @@ ActiveRecord::Schema.define(version: 20161218161818) do
     t.string   "uid"
     t.string   "nickname"
     t.string   "access_token"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "profile_image_id"
   end
 
   add_foreign_key "houses", "users"

@@ -61,3 +61,7 @@ end
 # Omniauth
 gem 'omniauth'
 gem 'omniauth-github'
+
+# Refile
+gem "refile", github: "gstark/refile", branch: "updates-for-rails-5", require: "refile/rails"
+gem "refile-postgres"
