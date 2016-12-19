@@ -1,0 +1,81 @@
+// Github box
+.btn.btn-block.btn-social.btn-github {
+  height: 35px;
+  margin-top: 100px;
+}
+
+// Github Icon
+.fa.fa-github {
+  margin-left: 5px;
+  margin-right: 7px;
+}
+
+// Github Login Text
+.login-with-github {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Minipillow brand logo styling
+.logo-style {
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+  padding-top: 5px;
+  color: #fff;
+  margin-right: 10px;
+
+   &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+// house/listing container styling
+.container-listings {
+  margin-top: 60px;
+}
+
+//house image
+.house_image {
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+
+.image_address {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 100%;
+  color: #000;
+  color: #f1f1f1;
+  margin: 0px;
+  background: rgba(10, 0, 0, 0.3);
+  width: 220px;
+}
+
+.image_price {
+  position: absolute;
+  top: 221px;
+  left: 20px;
+  width: 100%;
+  color: #f1f1f1;
+  margin: 0px;
+  background: rgba(10, 0, 0, 0.3);
+  width: 220px;
+}
+
+.image_text {
+  position: absolute;
+  top: 249px;
+  left: 20px;
+  width: 100%;
+  color: #f1f1f1;
+  margin: 0px;
+  background: rgba(10, 0, 0, 0.3);
+  width: 220px;
+}
