@@ -16,9 +16,9 @@ class HousesController < ApplicationController
   end
 
   # GET /houses/1/edit
-  def edit
-    @house = House.find(params[:id])
-  end
+  # def edit
+  #   @house = House.find(params[:id])
+  # end
 
   # POST /houses
   def create
@@ -33,21 +33,21 @@ class HousesController < ApplicationController
   end
 
   # PATCH/PUT /houses/1
-  def update
-    @house = House.find(params[:id])
-    if @house.update(house_params)
-      redirect_to @house, notice: 'House was successfully updated.'
-    else
-      render :edit
-    end
-  end
+  # def update
+  #   @house = House.find(params[:id])
+  #   if @house.update(house_params)
+  #     redirect_to @house, notice: 'House was successfully updated.'
+  #   else
+  #     render :edit
+  #   end
+  # end
 
   # DELETE /houses/1
-  def destroy
-    @house = House.find(params[:id])
-    @house.destroy
-    redirect_to houses_url, notice: 'House was successfully destroyed.'
-  end
+  # def destroy
+  #   @house = House.find(params[:id])
+  #   @house.destroy
+  #   redirect_to houses_url, notice: 'House was successfully destroyed.'
+  # end
 
   private
     # Only allow a trusted parameter "white list" through.

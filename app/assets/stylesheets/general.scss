@@ -35,7 +35,7 @@
   }
 }
 
-//house image
+//house image in index
 .house_image {
   position: relative;
   width: 100%; /* for IE 6 */
@@ -74,4 +74,15 @@
   margin: 0px;
   background: rgba(10, 0, 0, 0.3);
   width: 220px;
+}
+
+// text styling in show more page
+.style-show-text {
+  font-family: 'Muli', sans-serif;
+  color: #2C3E50;
+}
+
+// text styling in create house
+.style-create-header {
+  font-family: 'Lobster', cursive;
 }

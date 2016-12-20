@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-kenia = User.create(name: "Bobbie", uid: 1, nickname: "Kenia", access_token: 1)
-jasmine = User.create(name: "Jamie", uid: 2, nickname: "Jasmine", access_token: 2)
+kenia = User.create(name: "Kenia", uid: "@kaxcode", nickname: "Kenia", access_token: 1)
+jasmine = User.create(name: "Jasmine", uid: "@dubistdu", nickname: "Jasmine", access_token: 2)
 
 house = House.create!(
   [

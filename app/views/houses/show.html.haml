@@ -1,24 +1,41 @@
 .page-header
-  = link_to houses_path, class: 'btn btn-default' do
-    %span.glyphicon.glyphicon-list-alt
+  = link_to houses_path, class: 'btn btn-primary' do
     Back
-  = link_to edit_house_path(@house), class: 'btn btn-primary' do
-    %span.glyphicon.glyphicon-pencil
-    Edit
-  %h1 Show house
 
-%dl.dl-horizontal
-  %dt Address:
-  %dd= @house.address
-  %dt Number of beds:
-  %dd= @house.number_of_beds
-  %dt Number of baths:
-  %dd= @house.number_of_baths
-  %dt Year built:
-  %dd= @house.year_built
-  %dt Sq footage:
-  %dd= @house.sq_footage
-  %dt Price:
-  %dd= @house.price
-  %dt Description:
-  %dd= @house.description
+.container
+  .row
+    .col-xs-4.col-sm-4.col-md-4.col-sm-offset-1.col-md-offset-1
+      .panel.panel.default
+        .panel-heading.text-center.style-show-text
+          =@house.address
+        .ul.list-group.center.style-show-text
+          .li.list-group-item
+            Address:
+            =@house.address
+          .li.list-group-item.style-show-text
+            Number of beds:
+            =@house.number_of_beds
+          .li.list-group-item.style-show-text
+            Number of baths:
+            =@house.number_of_baths
+          .li.list-group-item.style-show-text
+            Year built:
+          .li.list-group-item.style-show-text
+            Sq Footage:
+            =@house.sq_footage
+          .li.list-group-item.style-show-text
+            Price:
+            =@house.price
+          .li.list-group-item.style-show-text
+            Description:
+            =@house.description
+          .li.list-group-item.style-show-text
+            Seller:
+            =@house.user.name
+          .li.list-group-item.style-show-text
+            Github:
+            =@house.user.uid
+    .col-xs-6.col-sm-6.col-md-6
+      .img-thumbnail{:style => "border:none; background:white;"}
+        .image-container.img
+        = image_tag attachment_url(@house, :cover_image), size: "400x3  00", class: "house_image"
