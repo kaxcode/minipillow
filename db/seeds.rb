@@ -18,7 +18,7 @@ house = House.create!(
       cover_image: File.open(Rails.root.join("db/seeds/two.jpg")), address: "2nd Ave", number_of_beds: 8, number_of_baths: 7, year_built: "2012", sq_footage: "1000000", price: "20000000", description: "Mansion", user: jasmine
     },
     {
-      cover_image: File.open(Rails.root.join("db/seeds/five.jpeg")), address: "Hobbit Ave.", number_of_beds: 20, number_of_baths: 2, year_built: "2016", sq_footage: "1000", price: "1000000", description: "Vacation House", user: kenia
+      cover_image: File.open(Rails.root.join("db/seeds/five.jpeg")), address: "Hobbit Ave.", number_of_beds: 20, number_of_baths: 2, year_built: "3676", sq_footage: "1000", price: "1000000", description: "Vacation House", user: kenia
     },
     {
       cover_image: File.open(Rails.root.join("db/seeds/one.jpeg")), address: "3rd Ave.", number_of_beds: 4, number_of_baths: 3, year_built: "2012", sq_footage: "1000", price: "250000", description: "House", user: jasmine
