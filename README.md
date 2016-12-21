@@ -1,24 +1,12 @@
-# README
+# MiniPillow
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Purpose ###
+Build a house shopping app to compete with Zillow/etc.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- - - -
+### How ###
+Rails and the gems Omniauth and Omniauth-github.
+- - - -
+### Result ###
+https://quiet-fjord-46585.herokuapp.com/
+![Alt text](app/assets/images/minipillow_heroku.png) "End result of MiniPillow"
