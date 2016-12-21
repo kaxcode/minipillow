@@ -1,4 +1,5 @@
 # MiniPillow
+To visit and play with my app, click here: https://quiet-fjord-46585.herokuapp.com/
 
 ### Purpose ###
 Build a house shopping app to compete with Zillow/etc.
@@ -13,5 +14,4 @@ Build a house shopping app to compete with Zillow/etc.
 
 - - - -
 ### Result ###
-https://quiet-fjord-46585.herokuapp.com/
 ![Alt text](app/assets/images/minipillow_heroku.png) "End result of MiniPillow"
