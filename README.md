@@ -14,4 +14,4 @@ Build a house shopping app to compete with Zillow/etc.
 
 - - - -
 ### Result ###
-![Alt text](app/assets/images/minipillow_heroku.png) "End result of MiniPillow"
+![screenshot] (https://github.com/kaxcode/minipillow/blob/master/doc/mini-pillow-demo.gif)
